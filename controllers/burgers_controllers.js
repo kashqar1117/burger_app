@@ -10,6 +10,8 @@ router.get('/api/burgers', (req, res)=>{
     })
 })
 
+router.put
+
 router.get('/', (req , res)=>{
     res.render('index')
 })
