@@ -1,15 +1,14 @@
-const btn = document.getElementById("button");
-console.log(btn)
+
+
+$(document).ready(function(){
+   const newBurgerName = $("button").click(function(){
+        const burgerText =$(".burgerText").val()
+
+
+    });
+
+    module.exports = newBurgerName
+  });
 
 
 
-
-
-btn.addEventListener('click', function() {
-    console.log("i was clicked!")
-})
-
-
-
-
-// btn.addEventListener("click", function(){console.log("Hello World!"); });
