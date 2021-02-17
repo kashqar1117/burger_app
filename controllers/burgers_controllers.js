@@ -6,11 +6,11 @@ const router = express.Router()
 router.get('/api/burgers', (req, res)=>{
     model.selectAll(function (data) {
         res.json(data)
-        res.render('index' , data)
+        res.render('index' , {burger:data})
     })
 })
 
-router.put
+
 
 router.get('/', (req , res)=>{
     res.render('index')
