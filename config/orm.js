@@ -1,7 +1,7 @@
 const { callbackify } = require('util');
 const connection = require('./connection')
-const newBurgerName =  require('javascript.js')
-console.log(newBurgerName)
+
+
 
 
 const orm = {
@@ -15,9 +15,9 @@ const orm = {
     },
 
 
-     //* `insertOne()`
+    //  * `insertOne()`
 
-     inserOne:function (table, val, cb) {
+     insertOne:function (table, val, cb) {
         connection.query(`INSERT INTO burgers ${table} VALUES (?)` , val, function(err, result) {
             if (err) {
               throw err;
@@ -26,7 +26,7 @@ const orm = {
             cb(result);
           });
      }
-     //* `updateOne()`
+    //  * `updateOne()`
 
 
 

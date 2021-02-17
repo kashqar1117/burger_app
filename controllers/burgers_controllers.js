@@ -11,6 +11,17 @@ router.get('/api/burgers', (req, res)=>{
 })
 
 
+router.post("/api/burgers", function(req, res) {
+    model.insertOne([
+      "name"
+    ], [
+      req.body.name
+    ], function(result) {
+      // Send back the ID of the new quote
+      console.log(result)
+    });
+  });
+
 
 router.get('/', (req , res)=>{
     res.render('index')

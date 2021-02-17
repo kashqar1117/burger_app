@@ -6,8 +6,8 @@ const burger = {
         orm.selectAll('burgers' , callback)
         
     },
-    inserOne: function (callback) {
-        orm.insertOne('burgers' , callback, val)
+    insertOne: function (callback) {
+        orm.insertOne('burgers' , callback)
 
 
     
